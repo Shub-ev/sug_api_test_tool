@@ -7,6 +7,8 @@ const Output = ({ response }) => {
     const startWithRef = useRef(0);
 
     const usMouseDownHandler = (e) => {
+        document.body.style.userSelect = "none";
+
         startYRef.current = e.clientY;
         startWithRef.current = componentHeight;
 
